@@ -10,6 +10,22 @@ EXERCICE 5 : Change couleur (2) - Colorie la page en fonction des touches press�
 - Méthode : utilise un switch pour gérer les différents cas de touches
 */
 
+document.addEventListener('keypress', (event)=> {
+    let eKey = String.fromCharCode(event.charCode);
+    eKey = eKey.toUpperCase();
+    if (eKey === 'B'){
+        document.querySelector('body').style.backgroundColor = 'blue';
+    }
+    else if (eKey === 'V'){
+        document.querySelector('body').style.backgroundColor = 'green';
+    }
+    else if (eKey === 'J'){
+        document.querySelector('body').style.backgroundColor = 'yellow';
+    }
+    else if (eKey === 'R'){
+        document.querySelector('body').style.backgroundColor = 'red';
+    }
+})
 
 
 /* 

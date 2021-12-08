@@ -30,3 +30,8 @@ Les attributs individuels sont eux-mêmes des propriétés de l'objet dataset.
 Affiche dans la console la valeur de l'attribut data-index de l'iPhone XS Max
 et puis affiche "J'ai … iPhone(s) XS Max en stock"
 */
+
+const ePhone = document.querySelector('#xs-max').dataset.index;
+
+console.log(ePhone);
+console.log(`J'ai ${ePhone} iPhone(s) XS Max en stock`);
