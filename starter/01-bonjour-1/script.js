@@ -41,15 +41,22 @@ MÉTHODE :
 2. récupérer l'élément "bouton" qui doit réagir
 3. ajouter à ce bouton un gestionnaire d'événement avec la méthode  addEventListener() qui va écouter le clic (événement click) et qui, au clic sur le bouton,  déclenchera l'appel de la fonction direbonjour.
 */
-function direBonjour() {
-    alert('Bonjour, toi !');
-}
 
-const btnElt = document.querySelector('#hello');
-btnElt.addEventListener('click', direBonjour);
+// function direBonjour() {
+//     alert('Bonjour, toi !');
+// }
+//
+// const btnElt = document.querySelector('#hello');
+// btnElt.addEventListener('click', direBonjour);
+
+
 
 
 // Autre écriture : avec une fonction anonyme
 
+const BtnElt = document.querySelector('#hello');
+BtnElt.addEventListener('click',(event)=>{
+    alert('Bonjour toi !');
+})
 
 // Écriture ES6
